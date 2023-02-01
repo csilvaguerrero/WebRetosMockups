@@ -1,0 +1,213 @@
+*{
+    /*Eliminamos los estilos por defecto del navegador*/
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    /* box-sizing: content-box; */
+}
+
+body{
+
+    width: 1280px;
+    
+}
+
+header#headerAlta{
+
+    padding: 20px;
+    width: 1240px; /*1280px - 40px de padding izquierdo y derecho = 1240px*/
+    background-color: #006293;
+
+}
+
+img#imagenCabecera{
+
+    width: 100px;
+    height: auto;
+
+}
+
+h2#tituloCabecera{
+
+    width: 140px;
+    color: white;
+    
+}
+
+
+aside#menuLateral{
+
+    background-color: #0090d8;
+    width: 170px;/*200px - 15px padding izquierdo - 15px padding derecho = 170px*/
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 900px;
+    float: left;
+
+}
+
+
+div#divContenidoAside{
+
+    height: 900px;
+    margin: auto;
+
+}
+
+
+p.contenidoAside{
+
+    width: 170px;
+    text-align: center;
+    margin-top: 150px;
+    font-size: 20px;
+    transition: 1s;
+    cursor: pointer;
+
+}
+
+p.contenidoAside:hover{
+
+    transition: 1s;
+    font-size: 25px;
+    color:rgb(219, 219, 219);
+
+}
+
+div#divAlta{
+
+    width: 760px;/*1080 - 160px - 160px de padding = 760px*/
+    height: 580px;
+    background-color: rgb(238, 236, 236);
+    float: right;
+    padding: 160px;  
+    
+}
+
+h2#tituloAlta{
+
+    width: 600px;
+    margin: auto;
+    height: 60px;
+    color: #2f2f2f;;
+    text-align: center;
+
+}
+
+form#altaReto{
+
+    width: 720px;/*760px - 20px - 20px = 720px*/
+    height: 200px;
+    margin: auto;
+    
+
+}
+
+div#contenedorIzquierdo{
+
+    width: 200px;
+    float: left;   
+
+}
+
+div#contenedorDerecho{
+
+    width: 200px;
+    float: right;
+
+}
+
+label.labelAlta{
+
+    width: 100px;
+    color: rgb(80, 78, 78);
+
+}
+
+input.inputAlta{
+
+    padding-left: 15px;
+    width: 185px;/*200px - 15px = 185px*/
+    height: 30px;
+    border: none;
+
+}
+
+textarea#areaDescripcion{
+
+    padding-top: 15px;
+    padding-left: 15px;
+    width: 185px;/*200px - 15px = 185px*/
+    height: 200px;
+    border: none;
+
+}
+
+select#selectCategoria{
+
+    width: 200px;
+    height: 30px;
+
+}
+
+label#labelPublicar{
+
+    text-align: center;
+    color: rgb(80, 78, 78);
+    display: block;
+
+}
+
+select#selectPublicar{
+
+    display: block;
+    margin: auto;
+    height: 30px;
+
+}
+
+div#divBotonesAlta{
+
+    display: inline-block;
+    width: 720px;
+    height: 100px;
+
+}
+
+
+div#divBotones{
+
+    margin: auto;
+    margin-top: 30px;
+    width: 400px;
+    background-color: rgb(83, 57, 22);
+
+}
+
+input.btnAlta{
+
+    background-color: green;
+    width: 720px;
+    border: none;
+    margin-top: 15px;
+    height: 40px;
+    font-weight: bold;
+    background-color: #2f2f2f;
+    color: white;
+    transition: 1s;
+    cursor: pointer;
+}
+
+input#btnAnadir:hover{
+
+    transition: 1s;
+    background-color: green;
+
+}
+
+input#btnCancelar:hover{
+
+    transition: 1s;
+    background-color: red;
+
+}
