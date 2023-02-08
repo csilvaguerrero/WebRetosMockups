@@ -1,0 +1,355 @@
+*{
+    /*Eliminamos los estilos por defecto del navegador*/
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+html{
+
+    width: 1280px;
+
+}
+
+body{
+
+    width: 100%;
+    min-height: 900px;
+
+}
+
+header#headerAlta{
+
+    padding: 1.5625%;/*(20 x 100 / 120)*/
+    width: 96.875%;/*(1240 x 100 / 1280)*/
+    height: 50px;
+    background-color: #006293;
+
+}
+
+img#imagenCabecera{
+
+    float: left;
+    width: 4.032258064516129%;/*(50 x 100 / 1240)*/
+    height: auto;
+
+}
+
+h1#tituloCabecera{
+
+    margin-top: 5px;
+    margin-left: 80px;
+    color: white;
+    
+}
+
+a#signoDesplegable{
+
+    text-align: center;
+}
+
+div#divDesplegable{
+
+    display: none;
+    position: absolute;
+    left: 0;
+    width: 100px;
+
+}
+
+ul.listaNavegacion a{
+
+    background-color: #5b88e9;
+    color: white;
+    padding: 10px;
+    display: block;
+}
+
+ul.listaNavegacion a:hover{
+
+    background-color: #2763e6;
+
+}
+
+ul.listaNavegacion ul{
+
+    display: none;
+    min-width: 120px;
+    
+}
+
+ul.listaNavegacion li:hover > ul{
+
+    display: block;
+
+}
+
+
+
+
+aside#menuLateral{
+
+    background-color: #0090d8;
+    width: 13.28125%;/*(170 x 100 / 1280)*/
+    padding: 0px 1.171875%;/*(15 x 100 / 1280)*/
+    height: 700px;
+    float: left;
+
+}
+
+p.contenidoAside{
+
+    width: 100%;
+    text-align: center;
+    margin-top: 150px;
+    font-size: 20px;
+    transition: 1s;
+    cursor: pointer;
+
+}
+
+p.contenidoAside:hover{
+
+    transition: 1s;
+    font-size: 25px;
+    color:rgb(219, 219, 219);
+
+}
+
+div#divAlta{
+
+    width: 59.375%;/*(760 x 100 / 1280)*/
+    height: 700px;
+    background-color: rgb(238, 236, 236);
+    float: right;
+    padding: 0px 12.5%;/*(160 x 100 / 1280)*/
+}
+
+h2#tituloAlta{
+
+    width: 78.94736842105263%;/*(600 x 100 / 760)*/
+    margin: auto;
+    height: 60px;
+    color: #2f2f2f;
+    padding-top: 20px;
+    text-align: center;
+
+}
+
+form#altaReto{
+
+    width: 94.73684210526316%;/*(720 x 100 / 760)*/
+    height: 200px;
+    margin: auto;
+    
+
+}
+
+div#contenedorIzquierdo{
+
+    /* width: 27.77777777777778%;(200 x 100 / 720) */
+    width: 41.66666666666667%;
+    float: left;   
+
+}
+
+div#contenedorDerecho{
+
+    /* width: 27.77777777777778%;(200 x 100 / 720) */
+    width: 41.66666666666667%;
+    float: right;
+}
+
+label.labelAlta{
+
+    color: rgb(80, 78, 78);
+
+}
+
+input.inputAlta{
+
+    width: 95%;/*(185 x 100 / 300)*/
+    padding-left: 5%;/*(15 x 100 / 300)*/
+    height: 30px;
+    border: none;
+
+}
+
+textarea#areaDescripcion{
+
+    width: 95%;/*(185 x 100 / 300)*/
+    padding-top: 15px;
+    padding-left: 5%;/*(15 x 100 / 300)*/
+    height: 200px;
+    border: none;
+
+}
+
+select#selectCategoria{
+
+    width: 100%;/*Ocupa todo el ancho de su contenedor*/
+    height: 30px;
+    border: none;
+}
+
+label#labelPublicar{
+
+    text-align: center;
+    color: rgb(80, 78, 78);
+    display: block;
+
+}
+
+select#selectPublicar{
+
+    display: block;
+    margin: auto;
+    height: 30px;
+
+}
+
+div#divBotonesAlta{
+
+    display: inline-block;
+    width: 100%;/*Ocupa todo el ancho de su contenedor*/
+    height: 100px;
+
+}
+
+
+input.btnAlta{
+
+    background-color: green;
+    width: 100%;/*Ocupa todo el ancho de su contenedor*/
+    border: none;
+    margin-top: 15px;
+    height: 40px;
+    font-weight: bold;
+    background-color: #2f2f2f;
+    color: white;
+    transition: 1s;
+    cursor: pointer;
+}
+
+input#btnAnadir:hover{
+
+    transition: 1s;
+    background-color: green;
+
+}
+
+input#btnCancelar:hover{
+
+    transition: 1s;
+    background-color: red;
+
+}
+
+
+
+
+/*VERSIÓN TABLET*/
+@media only screen and (max-width: 1180px){
+
+    aside#menuLateral{
+
+        display: none;
+
+    }
+
+    h2#tituloAlta{
+
+        padding-top: 20px;
+
+    }
+
+    img#imagenCabecera{
+
+        width: 6%;
+        height: auto;
+    }
+
+    div#divAlta{
+
+        width: 80%;
+
+    }
+    
+    div#divDesplegable{
+
+        display: block;
+    
+    }
+
+
+}
+
+
+/*VERSION MOVIL*/
+@media only screen and (max-width: 450px){
+
+
+    img#imagenCabecera{
+
+        width: 12.82051282051282%;/*(50 x 100 / 390)*/
+        height: auto;
+    }
+
+    h1#tituloCabecera{
+
+        margin-left: 115px;
+
+    }
+
+
+    div#divAlta{
+
+        width: 80%;
+        height: 1070px;
+    }
+
+
+    h2#tituloAlta{
+
+        font-size: 18px;
+        padding-top: 20px;
+    }
+    
+    div#divBotonesAlta{
+
+
+        margin-top: 30px;
+        font-size: 13px;
+
+    }
+
+    div#contenedorIzquierdo{
+
+        margin: auto;
+        float: none;
+        width: 100%;
+        font-size: 15px;
+    }
+
+    div#contenedorDerecho{
+       
+        margin: auto;
+        float: none;
+        width: 100%;
+        font-size: 13px;
+
+    }
+
+    aside#menuLateral{
+
+        display: none;
+
+    }
+
+}
+
+
+

@@ -9,6 +9,7 @@
 body{
 
     width: 1280px;
+    min-height: 900px;
     
 }
 
@@ -16,21 +17,24 @@ header#headerAlta{
 
     padding: 20px;
     width: 1240px; /*1280px - 40px de padding izquierdo y derecho = 1240px*/
+    height: 50px;
     background-color: #006293;
 
 }
 
 img#imagenCabecera{
 
-    width: 100px;
+    float: left;
+    width: 50px;
     height: auto;
 
 }
 
-h2#tituloCabecera{
+h1#tituloCabecera{
 
-    width: 140px;
     color: white;
+    margin-top: 5px;
+    margin-left: 80px;
     
 }
 
@@ -41,18 +45,11 @@ aside#menuLateral{
     width: 170px;/*200px - 15px padding izquierdo - 15px padding derecho = 170px*/
     padding-left: 15px;
     padding-right: 15px;
-    height: 900px;
+    height: 700px;
     float: left;
 
 }
 
-
-div#divContenidoAside{
-
-    height: 900px;
-    margin: auto;
-
-}
 
 
 p.contenidoAside{
@@ -77,10 +74,10 @@ p.contenidoAside:hover{
 div#divAlta{
 
     width: 760px;/*1080 - 160px - 160px de padding = 760px*/
-    height: 580px;
+    height: 700px;
     background-color: rgb(238, 236, 236);
     float: right;
-    padding: 160px;  
+    padding: 0px 160px;  
     
 }
 
@@ -89,6 +86,7 @@ h2#tituloAlta{
     width: 600px;
     margin: auto;
     height: 60px;
+    padding-top: 20px;
     color: #2f2f2f;;
     text-align: center;
 
@@ -105,21 +103,20 @@ form#altaReto{
 
 div#contenedorIzquierdo{
 
-    width: 200px;
+    width: 300px;
     float: left;   
 
 }
 
 div#contenedorDerecho{
 
-    width: 200px;
+    width: 300px;
     float: right;
 
 }
 
 label.labelAlta{
 
-    width: 100px;
     color: rgb(80, 78, 78);
 
 }
@@ -127,7 +124,7 @@ label.labelAlta{
 input.inputAlta{
 
     padding-left: 15px;
-    width: 185px;/*200px - 15px = 185px*/
+    width: 285px;/*300px - 15px = 285px*/
     height: 30px;
     border: none;
 
@@ -137,7 +134,7 @@ textarea#areaDescripcion{
 
     padding-top: 15px;
     padding-left: 15px;
-    width: 185px;/*200px - 15px = 185px*/
+    width: 285px;/*300px - 15px = 285px*/
     height: 200px;
     border: none;
 
@@ -145,8 +142,9 @@ textarea#areaDescripcion{
 
 select#selectCategoria{
 
-    width: 200px;
+    width: 300px;
     height: 30px;
+    border: none;
 
 }
 

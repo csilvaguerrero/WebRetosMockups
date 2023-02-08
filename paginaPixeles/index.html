@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Píxeles Retos</title>
+		<meta charset="UTF-8">
+		<meta name="author" content="Cristian Silva Guerrero">
+		<link href="estilo.css" rel="StyleSheet" type="text/css"/>
+	</head>
+	<body>
+		<header id="headerAlta">
+            <img src="./img/logo.webp" id="imagenCabecera"/>
+            <h1 id="tituloCabecera">RetosEVG</h1>
+        </header>
+        <main>
+            <aside id="menuLateral">
+                <p class="contenidoAside">Categorías</p>
+                <p class="contenidoAside">Retos</p>
+                <p class="contenidoAside">Grupos</p>
+                <p class="contenidoAside">Profesores</p>
+            </aside>
+            <div id="divAlta">
+                <h2 id="tituloAlta">ALTA DE RETO</h2>
+                <form id="altaReto">
+                    <div id="contenedorIzquierdo">
+                        <label for="inputAlta" class="labelAlta">Nombre:
+                            <br><br>
+                            <input type="text" class="inputAlta"/>
+                        </label>
+                        <br><br>
+                        <label for="inputAlta" class="labelAlta">Dirigido:
+                            <br><br>
+                            <input type="text" class="inputAlta"/>
+                        </label>
+                        <br><br>
+                        <label for="areaDescripcion" class="labelAlta">Descripcion:
+                            <br><br>
+                            <textarea id="areaDescripcion"></textarea>
+                        </label>
+                    </div>
+                    <div id="contenedorDerecho">
+                        <label for="selectCategoria" class="labelAlta">Categoría:
+                            <br><br>
+                            <select id="selectCategoria">
+                                <option>Matemáticas</option>
+                                <option>Atletismo</option>
+                                <option>Lenguaje</option>
+                            </select>
+                        </label>
+                        <br><br>
+                        <label for="inputAlta" class="labelAlta">Fecha Inicio Inscripcion:
+                            <br><br>
+                            <input type="date" class="inputAlta"/>
+                        </label>
+                        <br><br>
+                        <label for="inputAlta" class="labelAlta">Fecha Fin Inscripcion:
+                            <br><br>
+                            <input type="date" class="inputAlta"/>
+                        </label>
+                        <br><br>
+                        <label for="inputAlta" class="labelAlta">Fecha Inicio Reto:
+                            <br><br>
+                            <input type="date" class="inputAlta"/>
+                        </label>
+                        <br><br>
+                        <label for="inputAlta" class="labelAlta">Fecha Fin Reto:
+                            <br><br>
+                            <input type="date" class="inputAlta"/>
+                        </label>
+                    </div>
+                    <div id="divBotonesAlta">
+                        <label for="selectPublicar" id="labelPublicar">¿Quieres publicarlo ahora?
+                            <br><br>
+                            <select id="selectPublicar">
+                                <option>Sí, publicar ahora</option>
+                                <option>No, publicar en otro momento</option>
+                            </select>
+                        </label>
+                        <input type="submit" value="AÑADIR" class="btnAlta" id="btnAnadir"/>
+                        <input type="submit" value="CANCELAR" class="btnAlta" id="btnCancelar"/>
+                    </div>
+                </form>
+            </div>
+        </main>
+	</body>
+</html>
