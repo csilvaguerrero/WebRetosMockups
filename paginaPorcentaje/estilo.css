@@ -46,6 +46,9 @@ h1#tituloCabecera{
     
 }
 
+
+/*Botón desplegable*/
+
 a#signoDesplegable{
 
     text-align: center;
@@ -59,6 +62,7 @@ div#divDesplegable{
     width: 100px;
 
 }
+
 
 ul.listaNavegacion a{
 
@@ -86,7 +90,7 @@ ul.listaNavegacion li:hover > ul{
     display: block;
 
 }
-
+/*Fin de botón desplegable*/
 
 
 
@@ -150,16 +154,14 @@ form#altaReto{
 
 div#contenedorIzquierdo{
 
-    /* width: 27.77777777777778%;(200 x 100 / 720) */
-    width: 41.66666666666667%;
+    width: 41.66666666666667%;/*(300 x 100 / 720)*/
     float: left;   
 
 }
 
 div#contenedorDerecho{
 
-    /* width: 27.77777777777778%;(200 x 100 / 720) */
-    width: 41.66666666666667%;
+    width: 41.66666666666667%;/*(300 x 100 / 720)*/
     float: right;
 }
 
@@ -208,6 +210,10 @@ select#selectPublicar{
     display: block;
     margin: auto;
     height: 30px;
+    width: 27.5%;
+    box-sizing: content-box;/*Por defecto, es border-box. Si lo dejamos con border-box, su medida total sería de 198px,
+    puesto que sus bordes de 2px los cuenta dentro de sus 198. Aplicando la propiedad content-box,
+    podemos hacer que esos 2 píxeles de borde se sumen a los 198px de witdh y de lugar a 200px*/
 
 }
 

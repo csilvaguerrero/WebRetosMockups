@@ -3,7 +3,9 @@
     padding: 0;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    /* box-sizing: content-box; */
+    list-style: none;
+    text-decoration: none;
+    
 }
 
 body{
@@ -145,6 +147,7 @@ select#selectCategoria{
     width: 300px;
     height: 30px;
     border: none;
+    /* margin: auto; */
 
 }
 
@@ -161,6 +164,10 @@ select#selectPublicar{
     display: block;
     margin: auto;
     height: 30px;
+    width: 198px;
+    box-sizing: content-box;/*Por defecto, es border-box. Si lo dejamos con border-box, su medida total sería de 198px,
+                            puesto que sus bordes de 2px los cuenta dentro de sus 198. Aplicando la propiedad content-box,
+                            podemos hacer que esos 2 píxeles de borde se sumen a los 198px de witdh y de lugar a 200px*/
 
 }
 
